@@ -25,8 +25,8 @@ func NewSnowflaker(iDeviceId int64) *Snowflaker {
 	}
 }
 
-// getGrandParent() 获取父级节点的父级节点
-func (sf *Snowflaker) getId() int64 {
+// GetId() 获取父级节点的父级节点
+func (sf *Snowflaker) GetId() int64 {
 	currentTimeMillis := currentMillisecond()
 	if currentTimeMillis == sf.lastTimeMills {
 		sf.sequenceNumber = sf.sequenceNumber + 1
