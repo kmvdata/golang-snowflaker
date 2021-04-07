@@ -10,13 +10,13 @@ func TestSnowflakerGetId(t *testing.T) {
 	// Test sequenceNumber
 	println("==========")
 	for i := 0; i < 10; i++ {
-		println(snowflaker.getId())
+		println(snowflaker.GetId())
 	}
 
 	println("==========")
 	// Test skip sequenceNumber
 	for i := 0; i < 10; i++ {
 		time.Sleep(time.Duration(10) * time.Millisecond)
-		println(snowflaker.getId())
+		println(snowflaker.GetId())
 	}
 }
