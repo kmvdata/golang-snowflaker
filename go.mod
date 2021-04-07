@@ -1,3 +1,3 @@
-module github.com/kmvdata/golang-snowflaker
+module github.com/kmvdata/snowflaker
 
 go 1.15
