@@ -1,4 +1,4 @@
-package golang_snowflaker
+package snowflaker
 
 import "time"
 
